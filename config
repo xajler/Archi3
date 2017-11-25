@@ -356,41 +356,6 @@ bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'DroidSansMono:bol
 bindsym $mod+mod1+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -fn 'Inconsolata:bold:pixelsize=20S'"
 
 
-################### DUAL SCREEN ######################
-
-
-# setting variables for later use
-# use xrandr and/or arandr to know the names of your monitors
-# use this line to tell which monitor is on the right
-# xrandr --output DVI-I-2 --right-of DVI-I-1 --auto
-
-# my current setup
-set $firstMonitor DVI-I-1
-set $secondMonitor DVI-I-2
-
-#set $firstMonitor LVDS1
-#set $secondMonitor LVDS1
-
-#set $firstMonitor DVI-I-2
-#set $secondMonitor VGA-0
-
-#set $firstMonitor DVI-I-2
-#set $secondMonitor DVI-I-3
-
-#set $firstMonitor DVI-0
-#set $secondMonitor DVI-1
-
-workspace 1 output $firstMonitor
-workspace 2 output $firstMonitor
-workspace 3 output $firstMonitor
-workspace 4 output $firstMonitor
-workspace 5 output $firstMonitor
-workspace 6 output $secondMonitor
-workspace 7 output $secondMonitor
-workspace 8 output $secondMonitor
-workspace 9 output $secondMonitor
-workspace 10 output $secondMonitor
-
 # switch to workspace
 bindsym $mod+ampersand workspace 1
 bindsym $mod+eacute workspace 2
@@ -440,21 +405,21 @@ bindsym $mod+Shift+agrave move container to workspace 10; workspace 10
 # Assign application to start on a specific workspace
 # you can find the class with the program xprop
 
-assign [class="Firefox|Vivaldi-stable|Opera"]                                       → 1
-assign [class="sublime-text|sublime_text|Sublime_text|subl|Subl|subl3|Subl3"]       → 2
-assign [class="Xed|xed|Brackets|Atom|Code"]                                         → 2
-assign [class="Inkscape"]                                                           → 3
+assign [class="Vivaldi-stable|Firefox"]                                       → 1
+assign [class="Gnome-Terminal"]       → 2
+assign [class="Code"]                                         → 2
+#assign [class="Inkscape"]                                                           → 3
 assign [class="Gimp"]                                                               → 4
-assign [class="ristretto|Ristretto|shotwell|Shotwell|Xviewer"]                      → 5
+#assign [class="ristretto|Ristretto|shotwell|Shotwell|Xviewer"]                      → 5
 assign [class="Meld"]                                                               → 5
-assign [class="feh|gthumb|Gthumb|eog|Eog|Pinta|pixeluvo|Pixeluvo"]                  → 5
+#assign [class="feh|gthumb|Gthumb|eog|Eog|Pinta|pixeluvo|Pixeluvo"]                  → 5
 assign [class="Vlc|vlc"]                                                            → 6
 assign [class="Vmplayer|VirtualBox"]                                                → 7
 assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                                 → 8
-assign [class="Geary|Evolution"]                                                    → 9
-assign [class="Spotify|spotify"]                                                    → 10
+#assign [class="Geary|Evolution"]                                                    → 9
+#assign [class="Spotify|spotify"]                                                    → 10
 #fix for spotify not moving to workspace 10
-for_window [class="Spotify"] move to workspace 10
+#for_window [class="Spotify"] move to workspace 10
 
 
 ################### EXECUTE ######################
@@ -463,11 +428,11 @@ for_window [class="Spotify"] move to workspace 10
 # TRAY APPLICATIONS
 
 # num lock activated
-exec_always --no-startup-id numlockx on
+#exec_always --no-startup-id numlockx on
 # dropbox
-exec dropbox start
+#exec dropbox start
 # insync
-exec insync start
+#exec insync start
 # volume
 exec pasystray
 #exec volti
@@ -484,15 +449,15 @@ exec clipit
 #distro dependent applications are at bottom of config like filemanager ...
 
 #browsers
-exec firefox
-for_window [class="Firefox"] focus
+exec vivaldi-stable #firefox
+for_window [class="Vivaldi-Stable"] focus
 
 #Mail clients
 #exec evolution
 
 #Music
-exec --no-startup-id spotify
-for_window [class="Spotify"] focus
+#exec --no-startup-id spotify
+#for_window [class="Spotify"] focus
 
 #Conky
 #exec ~/.config/i3/start-conkys.sh
@@ -505,7 +470,7 @@ for_window [class="Spotify"] focus
 #mod1 = ALT
 
 #workspace 1 related
-bindsym $mod+F1 exec firefox;workspace 1;focus
+bindsym $mod+F1 exec vivaldi-stable;workspace 1;focus
 bindsym control+mod1+f exec firefox;workspace 1; focus
 bindsym control+mod1+v exec vivaldi-stable;workspace 1; focus
 
@@ -513,16 +478,16 @@ bindsym control+mod1+v exec vivaldi-stable;workspace 1; focus
 #sublime text see at bottom distro dependent
 
 #workspace 3 related
-bindsym $mod+F3 exec inkscape;workspace 3;focus
-bindsym control+mod1+i exec inkscape;workspace 3;focus
+bindsym $mod+F3 exec code;workspace 3;focus
+#bindsym control+mod1+i exec inkscape;workspace 3;focus
 
 #workspace 4 related
 bindsym $mod+F4 exec gimp;workspace 4;focus
 bindsym control+mod1+g exec gimp;workspace 4;focus
 
 #workspace 5 related
-bindsym $mod+F5 exec meld;workspace 5;focus
-bindsym control+mod1+m exec meld;workspace 5;focus
+#bindsym $mod+F5 exec meld;workspace 5;focus
+#bindsym control+mod1+m exec meld;workspace 5;focus
 
 #workspace 6 related
 bindsym $mod+F6 exec vlc;workspace 6;focus
@@ -533,17 +498,17 @@ bindsym $mod+F6 exec vlc;workspace 6;focus
 # filemanagers see at bottom distro dependent
 
 #workspace 9 related
-bindsym $mod+F9 exec evolution;workspace 9;focus
-bindsym control+mod1+e exec evolution;workspace 9;focus
+#bindsym $mod+F9 exec evolution;workspace 9;focus
+#bindsym control+mod1+e exec evolution;workspace 9;focus
 #bindsym $mod+F9 exec geary;workspace 9;focus
 #bindsym control+mod1+e exec geary;workspace 9;focus
 
 #workspace 10 related
-bindsym $mod+F10 exec spotify;workspace 10;focus
-bindsym control+mod1+s exec spotify;workspace 10;focus
+#bindsym $mod+F10 exec spotify;workspace 10;focus
+#bindsym control+mod1+s exec spotify;workspace 10;focus
 
 #catfish
-bindsym control+mod1+c exec catfish;focus
+#bindsym control+mod1+c exec catfish;focus
 
 ################### SHORTCUTS WORKSPACES ######################
 
@@ -565,9 +530,9 @@ for_window [urgent=latest] focus
 ################### SCREENSHOTS ######################
 
 
-bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
+#bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
 #bindsym Print exec scrot '%Y-%m-%d-%H-%M-%S.jpg' -e 'mv $f ~/Pictures/' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Pictures'
-bindsym Control+Print exec gnome-screenshot -i
+#bindsym Control+Print exec gnome-screenshot -i
 #bindsym shift+Print exec shutter
 #bindsym control+Print exec xfce4-screenshooter
 
@@ -577,7 +542,7 @@ bindsym Control+Print exec gnome-screenshot -i
 
 #floating enabled from some programs - find with xprop
 #for_window [class="Gnome-disks"] floating enable
-for_window [class="^Skype$"] floating enable
+#for_window [class="^Skype$"] floating enable
 for_window [class="^Gnome-font-viewer$"] floating enable
 for_window [class="^Gpick$"] floating enable
 #for_window [class="^Vlc$"] floating enable
@@ -711,7 +676,7 @@ new_float normal
 
 # AZERTY KEYBOARD
 # Change this if you use qwerty
-exec setxkbmap be
+exec setxkbmap dvorak
 
 
 ###################       UNCLUTTER      ##############################
@@ -877,9 +842,9 @@ client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 # want it
 # packer i3-gaps-next-git --noedit
 
-for_window [class="^.*"] border pixel 5
-gaps inner 10 
-gaps outer 5
+for_window [class="^.*"] border pixel 2
+gaps inner 2
+gaps outer 2
 #smart_gaps on
 #smart_borders on
 
@@ -974,8 +939,8 @@ bindsym control+Shift+Escape exec gnome-system-monitor;focus
 #workspace 2 related
 #bindsym $mod+F2 exec subl;workspace 2;focus
 #bindsym control+mod1+w exec subl;workspace 2;focus
-bindsym $mod+F2 exec subl3;workspace 2;focus
-bindsym control+mod1+w exec subl3;workspace 2;focus
+bindsym $mod+F2 exec code;workspace 2;focus
+bindsym control+mod1+w exec code;workspace 2;focus
 
 #workspace 8 related
 bindsym $mod+F8 exec nemo --no-desktop;workspace 8;focus
@@ -1011,12 +976,12 @@ bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
 
 #sublime-text
 #exec subl
-exec subl3
+exec code
 
 #Authentication dialog
 
 #arch budgie
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 #Linux Mint
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
@@ -1030,7 +995,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec pamac-tray
 
 # bluetooth
-exec blueberry-tray
+#exec blueberry-tray
 #exec --no-startup-id blueman-applet
 
 # network
