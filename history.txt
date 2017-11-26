@@ -1,0 +1,243 @@
+    1  sudo su
+    2  sudo vi /etc/pacman.conf 
+    3  alias
+    4  alias vi=vim
+    5  sudo vi /etc/pacman.conf 
+    6  pacman -S vim
+    7  sudo pacman -S vim
+    8  sudo vi /etc/pacman.conf 
+    9  vim /etc/pacman.conf 
+   10  alias
+   11  vi
+   12  vi /etc/pacman.conf 
+   13  sudo vi /etc/pacman.conf 
+   14  sudo su
+   15  sudo vi /etc/pacman.conf 
+   16  sudo viw /etc/pacman.conf 
+   17  sudo vim /etc/pacman.conf 
+   18  sudo su
+   19  sudo vi /etc/pacman.conf 
+   20  sudo su
+   21    
+   22  alias
+   23  alias vi='vim'
+   24  vi
+   25  clear
+   26  vi /etc/X11/xinit/xinitrc
+   27  clear
+   28  cd src/Archi3/
+   29  cd installation/
+   30  ls
+   31  ./110-install-printers-v1.sh 
+   32  vi 120-install-sound-v1.sh 
+   33  ./120-install-sound-v1.sh 
+   34  pacman -S acpi
+   35  sudo pacman -S acpi
+   36  acpi -b
+   37  vi 130-install-network-v1.sh 
+   38  ./130-install-network-v1.sh 
+   39  vi ./200-install-extra-software-v1.sh 
+   40  ./200-install-extra-software-v1.sh 
+   41  ./300-install-themes-icons-cursors-conky-v1.sh 
+   42  vi 300-install-themes-icons-cursors-conky-v1.sh 
+   43  vi 400-install-software-distro-specific-v1.sh 
+   44  acpi -b
+   45  halt
+   46  sudo halt
+   47  acpi -b
+   48  acpi -b
+   49  vi 400-install-software-distro-specific-v1.sh 
+   50  cd src/Archi3/installation/
+   51  vi 400-install-software-distro-specific-v1.sh 
+   52  alias vi='vim'
+   53  vi 400-install-software-distro-specific-v1.sh 
+   54  ./400-install-software-distro-specific-v1.sh 
+   55  vi 600-install-personal-settings-folders-v1.sh 
+   56  echo $HOME
+   57  ./600-install-personal-settings-folders-v1.sh 
+   58  cd 
+   59  ls
+   60  ls -al
+   61  cd src/Archi3/installation/
+   62  ls -aux
+   63  vi 610-install-personal-settings-gimp-v1.sh 
+   64  ./610-install-personal-settings-gimp-v1.sh 
+   65  vi 620-install-personal-settings-arc-colora-v1.sh 
+   66  ./620-install-personal-settings-arc-colora-v1.sh 
+   67  vi 630-install-personal-settings-variety-v1.sh 
+   68  ./630-install-personal-settings-variety-v1.sh 
+   69  vi 640-install-personal-settings-root-files-v1.sh 
+   70  ./640-install-personal-settings-root-files-v1.sh 
+   71  vi 650-install-personal-settings-gnome-screenshot-v1.sh 
+   72  ls 
+   73  vi 690-install-personal-settings-i3-configuration-v1.sh 
+   74  vi 690-install-personal-settings-i3-configuration-v1.sh 
+   75  ./690-install-personal-settings-i3-configuration-v1.sh 
+   76  vi 700-firefox-for-dark-themes-settings-v1.sh 
+   77  ls
+   78  yaourt -S broadcom-wl
+   79  packm
+   80  acpi -b
+   81  acpi -b
+   82  pacman -S dkms
+   83  sudo pacman -S dkms
+   84  sudo yaourt broadcom-wl-dkms
+   85  sudo yaourt broadcom-wl-dkms
+   86  sudo yaourt broadcom-wl-dkms
+   87  yaourt broadcom-wl-dkms
+   88  yaourt broadcom-wl-dkms
+   89  yaourt broadcom-wl-dkms
+   90  yaourt broadcom-wl
+   91  acpi -b
+   92  sudo reboot
+   93  acpi -b
+   94  acpi -b
+   95  acpi -b
+   96  acpi -b
+   97  acpi -b
+   98  acpi -b
+   99  sudo system poweroff
+  100  sudo systemctl poweroff
+  101  acpi -b
+  102  acpi -b
+  103  cd .config/i3
+  104  git status
+  105  git pull
+  106  cd .config/i3
+  107  setxkbmap dvorak
+  108  acpi -b
+  109  packer -S broadcom-wl-dkms
+  110  sudo reboot
+  111  acpi -b
+  112  nm-applet 
+  113  cd .config/i3
+  114  alias
+  115  vim config
+  116  lspci -vnn -d 14e4
+  117  lspci -vnn -d 14e4:
+  118  lsmod | egrep 'b43|ssb'
+  119  lsmod | egrep 'b43'
+  120  lsmod | grep 'b43'
+  121  lsmod | grep b43
+  122  pacman -Sy
+  123  sudo pacman -Syu
+  124  ls /etc/netctl/interfaces/
+  125  netctl
+  126  netctl list
+  127  lspci -v
+  128  lspci -vnn -d 14e4:
+  129  dmesg  | grep tg3
+  130  dmesg  | grep bcma
+  131  rmmod b43
+  132  rmmod ssb
+  133  modprobe wl
+  134  sudo modprobe wl
+  135  lsmod
+  136  acpi -b
+  137  mkinitcpio -v
+  138  modprobe brcmsmac
+  139  sudo modprobe brcmsmac
+  140  lspci -vnn | grep 14e4:
+  141  lspci -vnn -d 14e4:
+  142  ping 
+  143  sudo modprobe brcmsmac
+  144  ls /etc/modprobe.d/
+  145  sudo ls /etc/modprobe.d/
+  146  ls /usr/lib/modprobe.d/
+  147  sudo vim /usr/lib/modprobe.d/broadcom-wl-dkms.conf 
+  148  journalctl -b
+  149  journalctl -b
+  150  acpy -b
+  151  acpi -b
+  152  sudo reboot
+  153  sudo vim /usr/lib/modprobe.d/broadcom-wl-dkms.conf 
+  154  sudo modprobe brcmsmac
+  155  sudo vim /usr/lib/modprobe.d/systemd.conf 
+  156  vim /etc/modules-load.d/brmsmac.conf
+  157  sudo vim /etc/modules-load.d/brcmsmac.conf
+  158  sudo reboot
+  159  vim .config/i3/config
+  160  ls -al
+  161  vim .zshrc 
+  162  vim .bashrc 
+  163  sudo vi /etc/dhcpcd.conf 
+  164  sudo vim /etc/dhcpcd.conf 
+  165  vim .bashrc 
+  166  vim .bashrc 
+  167  yaourt -S xf86-input-mtrack-git
+  168  vim .Xmodmap
+  169  yaourt -S mbpfan-git
+  170  vim .bashrc 
+  171  yaourt -S mbpfan-git
+  172  sudo reboot
+  173  yaourt -S mbpfan-git
+  174  sudo systemctl mbpfan.service
+  175  sudo systemctl enable mbpfan.service
+  176  sudo vim /etc/sysctl.d/99-sysctl.conf
+  177  sudo sysctl vm.swappiness=1
+  178  sudo vim /etc/systemd/logind.conf 
+  179  sudo pacman -S pm-utils
+  180  packer -S pm-utils
+  181  yaourt -S thermald
+  182  sudo pacman -S cpupower
+  183  sudo pacman -S bash-completion
+  184  cpupower frequency-set powersave
+  185  sudo cpupower frequency-set powersave
+  186  sudo cpupower frequency-set -g powersave
+  187  yaourt powertop
+  188  yaourt powertop
+  189  sudo vi /etc/systemd/system/powertop.service
+  190  sudo vim /etc/systemd/system/powertop.service
+  191  sudo vim /etc/systemd/system/powertop.service
+  192  sudo vim /etc/systemd/system/powertop.service
+  193  ls /etc/systemd/system/
+  194  la /etc/systemd/system/
+  195  rm -rf /etc/systemd/system/.powertop.service.swp 
+  196  sudo rm -rf /etc/systemd/system/.powertop.service.swp 
+  197  sudo chmod +x /etc/systemd/system/powertop.service 
+  198  la /etc/systemd/system/
+  199  sudo systemctl enable powertop.service
+  200  grep . -r /sys/firmware/acpi/interrupts/
+  201  vi
+  202  sudo vi /etc/systemd/system/suppress-gpe4E.service
+  203  sudo vim /etc/systemd/system/suppress-gpe4E.service
+  204  sudo systemctl enable suppress-gpe4E.service
+  205  yaourt -S fontconfig-infinality
+  206  yaourt -Syua
+  207  sudo pacman -S ufw
+  208  sudo ufw enable
+  209  sudo systemctl enable ufw
+  210  sudo reboot
+  211  sudo /etc/modprobe.d/hid_apple.conf
+  212  sudo vim /etc/modprobe.d/hid_apple.conf
+  213  sudo vim /etc/X11/xorg.conf.d/20-intel.conf
+  214  modinfo -p i915
+  215  systool -m i915 -av
+  216  acpi -b
+  217  sudo vim /etc/modprobe.d/hid_apple.conf
+  218  sudo vim /etc/modprobe.d/hid_apple.conf
+  219  sudo vim /etc/modprobe.d/hid_apple.conf
+  220  sudo reboot
+  221  sudo vim /etc/X11/xorg.conf.d/20-intel.conf
+  222  sudo rm /etc/X11/xorg.conf.d/20-intel.conf
+  223  sudo reboot
+  224  sudo systemctl poweroff 
+  225  333333333333333333333333333333333333333333333333~333333
+  226  exit
+  227  exit
+  228   acpi -b
+  229  exit
+  230  sudo systemctl poweroff 
+  231   acpi -b
+  232   acpi -b
+  233  loadkeys dvorak
+  234  sudo reboot
+  235  acpi -b
+  236  vivaldi &
+  237  exit
+  238  ls
+  239  la
+  240  sudo reboot
+  241  acpi -b
+  242  history 
+  243  history > history.txt
