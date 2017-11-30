@@ -97,7 +97,7 @@ sh install-vivaldi-v1.sh
 
 # zsh
 
-sh install-zsh-v1.sh
+#sh install-zsh-v1.sh
 
 ###############################################################################################
 
@@ -106,7 +106,7 @@ sh install-zsh-v1.sh
 
 # hardcodefixer
 
-sh hardcodefixer-v2.sh
+#sh hardcodefixer-v2.sh
 
 ###############################################################################################
 

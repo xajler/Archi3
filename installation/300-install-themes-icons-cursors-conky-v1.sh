@@ -24,25 +24,25 @@ sh install-awesome-font-v1.sh
 
 # Conky Aureola
 
-sh conky-aureola-v3.sh
+#sh conky-aureola-v3.sh
 
 ###############################################################################################
 
 # Sardi-extra icons
 
-sh icons-sardi-extra-v3.sh
+#sh icons-sardi-extra-v3.sh
 
 ###############################################################################################
 
 # Sardi icons
 
-sh icons-sardi-v3.sh
+#sh icons-sardi-v3.sh
 
 ###############################################################################################
 
 # Surfn icons
 
-sh icons-surfn-v3.sh
+#sh icons-surfn-v3.sh
 
 ###############################################################################################
 
@@ -60,7 +60,7 @@ sh install-gtk-arc-theme-git-v1.sh
 
 # Cursor theme
 
-sh install-breeze-cursor-theme-v1.sh
+#sh install-breeze-cursor-theme-v1.sh
 
 
 

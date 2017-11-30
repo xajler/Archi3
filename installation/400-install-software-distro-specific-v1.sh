@@ -25,7 +25,7 @@ sudo pacman -S noto-fonts --noconfirm --needed
 
 #file manager
 
-sudo pacman -S nemo --noconfirm --needed
+#sudo pacman -S nemo --noconfirm --needed
 
 
 #Fonts
@@ -35,17 +35,17 @@ sudo pacman -S ttf-droid --noconfirm --noconfirm --needed
 sudo pacman -S ttf-inconsolata --noconfirm --needed
 
 #Utilities
-sudo pacman -S pamac --noconfirm --needed 
+#sudo pacman -S pamac --noconfirm --needed 
 sudo pacman -S notify-osd  --noconfirm --needed
 sudo pacman -S lxappearance --noconfirm --needed
 sudo pacman -S feh --noconfirm --needed
 sudo pacman -S arandr --noconfirm --needed
-sudo pacman -S qt4 --confirm --needed
+#sudo pacman -S qt4 --confirm --needed
 sudo pacman -S xorg-xrandr --noconfirm --needed
-sudo pacman -S gvfs  --noconfirm --needed
+#sudo pacman -S gvfs  --noconfirm --needed
 sudo pacman -S compton  --noconfirm --needed
-sudo pacman -S volumeicon  --noconfirm --needed
-#sudo packer -S arandr  --noconfirm
+#sudo pacman -S volumeicon  --noconfirm --needed
+sudo packer -S arandr  --noconfirm
 #run with systemadm
 #sudo packer -S systemd-ui  --noconfirm
 
@@ -76,17 +76,17 @@ else
 	if pacman -Qi packer &> /dev/null; then
 
 		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+#		packer -S --noconfirm --noedit  $package
 
 	elif pacman -Qi pacaur &> /dev/null; then
 		
 		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+#		pacaur -S --noconfirm --noedit  $package
 		 	
 	elif pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+#		yaourt -S --noconfirm $package
 			  	
 	fi
 
@@ -133,17 +133,17 @@ else
 	if pacman -Qi packer &> /dev/null; then
 
 		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+#		packer -S --noconfirm --noedit  $package
 
 	elif pacman -Qi pacaur &> /dev/null; then
 		
 		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+#		pacaur -S --noconfirm --noedit  $package
 		 	
 	elif pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+#		yaourt -S --noconfirm $package
 			  	
 	fi
 
@@ -163,7 +163,7 @@ else
 	echo "To install pasytray, go to tmp file and run from there"
 	echo "sudo pacman -U /tmp/packerbuild-1000/pasystray-git/pasystray-git/pasystray-git-0.6.0.r13.gccb5b6e-1-x86_64.pkg.tar.xz"
 	echo "Trying to run the git version"
-	sudo pacman -U /tmp/packerbuild-1000/pasystray-git/pasystray-git/pasystray-git*  --needed --noconfirm
+#	sudo pacman -U /tmp/packerbuild-1000/pasystray-git/pasystray-git/pasystray-git*  --needed --noconfirm
 	fi
 
 fi
