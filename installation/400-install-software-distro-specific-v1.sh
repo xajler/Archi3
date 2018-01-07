@@ -45,7 +45,6 @@ sudo pacman -S xorg-xrandr --noconfirm --needed
 #sudo pacman -S gvfs  --noconfirm --needed
 sudo pacman -S compton  --noconfirm --needed
 #sudo pacman -S volumeicon  --noconfirm --needed
-sudo packer -S arandr  --noconfirm
 #run with systemadm
 #sudo packer -S systemd-ui  --noconfirm
 
@@ -253,7 +252,7 @@ fi
 ##############################################
 #
 # macbookpro fan control for manjaro 0.8.12 Ascella
-# packer macfanctld-git --noedit
+ packer macfanctld-git --noedit
 # WHEN kernel update possibly missing not sure if I need it
 # packer aic94xx --noedit
 #

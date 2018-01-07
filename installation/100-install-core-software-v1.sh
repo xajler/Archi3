@@ -26,7 +26,7 @@ sudo pacman -S --noconfirm --needed lm_sensors lsb-release mpv
 #sudo pacman -S --noconfirm --needed nemo net-tools numlockx openshot pinta plank polkit-gnome 
 #sudo pacman -S --noconfirm --needed redshift ristretto sane screenfetch scrot shotwell 
 #sudo pacman -S --noconfirm --needed simple-scan simplescreenrecorder smplayer sysstat 
-sudo pacman -S --noconfirm --needed transmission-cli transmission-gtk
+#sudo pacman -S --noconfirm --needed transmission-cli transmission-gtk
 #sudo pacman -S --noconfirm --needed variety vlc vnstat wget unclutter  
 
 #sudo systemctl enable vnstat
@@ -35,7 +35,7 @@ sudo pacman -S --noconfirm --needed transmission-cli transmission-gtk
 ###############################################################################################
 
 # installation of zippers and unzippers
-sudo pacman -S --noconfirm --needed unace unrar zip unzip sharutils  uudeview  arj cabextract file-roller
+# sudo pacman -S --noconfirm --needed unace unrar zip unzip sharutils  uudeview  arj cabextract file-roller
 
 ###############################################################################################
 

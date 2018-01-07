@@ -85,13 +85,13 @@ sh install-neofetch-v1.sh
 
 # Visual studio code
 
-sh install-visual-studio-code-v1.sh
+#sh install-visual-studio-code-v1.sh
 
 ###############################################################################################
 
 # Vivaldi
 
-sh install-vivaldi-v1.sh
+#sh install-vivaldi-v1.sh
 
 ###############################################################################################
 
